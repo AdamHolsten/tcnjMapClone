@@ -27,12 +27,13 @@
     },
     "web": {
       "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "bundler": "metro",
+      "output": "server"
     },
     "plugins": ["expo-router", "expo-font", "expo-asset"],
     "experiments": {
       "tsconfigPaths": true,
-      "baseUrl": "/map_app_8"
+      "baseUrl": "/tcnjMapClone"
     }
   }
 }

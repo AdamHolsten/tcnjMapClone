@@ -6,7 +6,9 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "deploy": "gh-pages -t -d dist",
+    "predeploy": "expo export -p web"
   },
   "dependencies": {
     "@expo-google-fonts/alfa-slab-one": "^0.2.3",
@@ -53,6 +55,7 @@
     "@babel/core": "^7.20.0",
     "@tanstack/eslint-plugin-query": "^5.27.7",
     "@types/react": "~18.2.79",
+    "gh-pages": "^6.1.1",
     "typescript": "~5.3.3"
   },
   "private": true

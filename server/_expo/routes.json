@@ -1,0 +1,49 @@
+{
+  "apiRoutes": [],
+  "htmlRoutes": [
+    {
+      "file": "./(tabs)/(drawer)/index.tsx",
+      "page": "/index",
+      "namedRegex": "^/(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/contact.tsx",
+      "page": "/(tabs)/contact",
+      "namedRegex": "^(?:/\\(tabs\\))?/contact(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/discover.tsx",
+      "page": "/(tabs)/discover",
+      "namedRegex": "^(?:/\\(tabs\\))?/discover(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "expo-router/build/views/Sitemap.js",
+      "page": "/_sitemap",
+      "namedRegex": "^/_sitemap(?:/)?$",
+      "routeKeys": {},
+      "generated": true
+    },
+    {
+      "file": "./(stops)/[slug].tsx",
+      "page": "/[slug]",
+      "namedRegex": "^/(?<slug>[^/]+?)(?:/)?$",
+      "routeKeys": {
+        "slug": "slug"
+      }
+    }
+  ],
+  "notFoundRoutes": [
+    {
+      "file": "expo-router/build/views/Unmatched.js",
+      "page": "/+not-found",
+      "namedRegex": "^(?:/(?<notfound>.+?))?(?:/)?$",
+      "routeKeys": {
+        "notfound": "not-found"
+      },
+      "generated": true
+    }
+  ]
+}

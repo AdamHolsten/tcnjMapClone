@@ -1,0 +1,36 @@
+query TourStops {
+  tourStops {
+    nodes {
+      mobileTourFields {
+        abbreviatedTitle
+        introductoryText
+        buildingImage {
+          mediaItemUrl
+        }
+        coordinates
+        heroImage {
+          mediaItemUrl
+        }
+        stopNumber
+        videoEmbed
+        videoThumbnail {
+          mediaItemUrl
+        }
+        imageGallery {
+          galleryImage {
+            mediaItemUrl
+          }
+        }
+      }
+      title
+    }
+  }
+}
+
+query individuaQuery {
+  tourStop(id: "2988", idType: DATABASE_ID) {
+    mobileTourFields {
+      abbreviatedTitle
+    }
+  }
+}

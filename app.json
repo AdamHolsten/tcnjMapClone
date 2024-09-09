@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "tcnjMap",
+    "slug": "tcnjMap",
+    "scheme": "tcnjmap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#FDD700",
+      "icon": "./assets/splash-screen-icon.png"
+    },
+    "backgroundColor": "#FDD700",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "edu.tcnj.tcnjMap"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/splash-screen-icon.png",
+        "backgroundColor": "#FDD700"
+      },
+      "package": "edu.tcnj.tcnjMap"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": ["expo-router", "expo-font", "expo-asset"],
+    "experiments": {
+      "tsconfigPaths": true,
+      "baseUrl": "/map_app_8"
+    }
+  }
+}

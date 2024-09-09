@@ -1,0 +1,87 @@
+query ProgramsListing {
+  programs(first: 120) {
+    nodes {
+      program {
+        fullProgramTitle
+        degreeType
+        slug
+        school
+        programAtAGlance
+        heroImgDesktop {
+          sourceUrl
+        }
+        horizontalPositionDesktopHero
+        heroImgTablet {
+          sourceUrl
+        }
+        heroImgMobile {
+          sourceUrl
+        }
+        departmentRepeater {
+          deptTitle
+          deptUrl
+        }
+        careers {
+          left
+          right
+          body
+        }
+        programOfStudy {
+          left
+          rightImage {
+            sourceUrl
+          }
+          rightImageHorizontalPosition
+          rightImageVerticalPosition
+          body
+        }
+        lowerContent {
+          title
+          body
+        }
+        quoteContentArea
+        learnMoreList {
+          title
+          slug
+          schoolOrAdditionalLabel
+        }
+        metaTitle
+        metaDescription
+        socialImage {
+          sourceUrl
+        }
+      }
+      title
+    }
+  }
+}
+
+query RedirectList {
+  programRedirects {
+    nodes {
+      redirectProgram {
+        programOptions
+        school
+        redirecturl
+      }
+      title
+    }
+  }
+}
+
+query AppSelectProg {
+ programs(first:120) {
+                nodes {
+                  program {
+                    slug
+                    programOptions
+                    additionalOptions
+         						appSelectedProgram
+                    appImage{
+                      sourceUrl
+                    }
+                  }
+                  title
+                }
+              }
+}
